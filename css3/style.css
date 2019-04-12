@@ -158,8 +158,8 @@ body {
 /*slider*/
 .container_slider{
     position: relative;
-    width: 750px;
-    height: 350px;
+    width: 590px;
+    height: 250px;
     margin:auto;
     overflow: hidden;
     border: 12px solid;
@@ -222,12 +222,19 @@ body {
 }
 .imagen {
   position: relative;
-  width: 600px;
-  height:200px;
+  width: 590px;
+  height:190px;
   border: 5px solid #004b00;
   box-shadow: 0px 2px 12px 7px rgba(180, 255, 180);
   margin:10px auto;
   display:block;    
+}
+/*video*/
+
+.video {
+  position: relative;
+  display:block; 
+  
 }
 
 h3{
@@ -252,3 +259,103 @@ h3{
     
     
 }
+
+th {
+    
+    font-family: serif;
+    line-height: 150%;
+    font-size: 14pt;
+    font-weight: normal;
+
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;    
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*modal*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 70%;
+	position: relative;
+	margin: 5% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #00BFFF;
+	background: -moz-linear-gradient(#00BFFF);
+	background: -webkit-linear-gradient(#00BFFF);
+	background: -o-linear-gradient(#00BFFF);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
